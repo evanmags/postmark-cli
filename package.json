@@ -1,6 +1,6 @@
 {
-  "name": "postmark-cli",
-  "version": "1.5.11",
+  "name": "@evanmags/postmark-cli",
+  "version": "1.5.13",
   "description": "A CLI tool for managing templates, sending emails, and fetching servers on Postmark.",
   "main": "./dist/index.js",
   "dependencies": {
@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wildbit/postmark-cli.git"
+    "url": "git+https://github.com/evanmags/postmark-cli.git"
   },
   "author": "",
   "license": "MIT",
