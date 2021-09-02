@@ -37,7 +37,17 @@ export interface TemplatePushResults {
   failed: number
 }
 
+export interface TemplateValidateResults {
+  success: number
+  failed: number
+}
+
 export interface TemplatePushReview {
+  layouts: any[]
+  templates: any[]
+}
+
+export interface TemplateValidateReview {
   layouts: any[]
   templates: any[]
 }
@@ -61,6 +71,12 @@ export interface TemplatePullArguments {
   requestHost: string
   outputdirectory: string
   overwrite: boolean
+}
+
+export interface TemplateValidateArguments {
+  serverToken: string
+  requestHost: string
+  templatesdirectory: string
 }
 
 export interface TemplatePushArguments {
@@ -97,7 +113,8 @@ export interface MetaFileTraverse {
 }
 
 export interface TemplateValidationPayload {
-  TextBody: string
+  TextBody?: string
+  HtmlBody?: string
   TemplateType: 'Standard' | 'Layout'
 }
 
